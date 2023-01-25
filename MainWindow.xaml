@@ -1,0 +1,16 @@
+﻿<Window x:Class="Store.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Store"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="400">
+    <Grid Margin="0,0,0,-6">
+        <Button x:Name="btn_login" Content="Войти" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btn_login_Click"/>
+        <TextBox x:Name="Login" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="30"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" Width="234" Height="30"/>
+        <Label Content="Вход" HorizontalAlignment="Left" Margin="148,83,0,0" VerticalAlignment="Top" Height="71" Width="86" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
+
+    </Grid>
+</Window>
