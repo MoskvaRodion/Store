@@ -17,9 +17,7 @@ using System.Windows.Media.Animation;
 
 namespace Store
 {
-    /// <summary>
-    /// Логика взаимодействия для catalog.xaml
-    /// </summary>
+
     public partial class catalog : Page
     {
         public catalog()
