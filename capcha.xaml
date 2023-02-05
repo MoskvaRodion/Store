@@ -1,0 +1,15 @@
+﻿<Window x:Class="Store.capcha"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Store"
+        mc:Ignorable="d"
+        Title="capcha" Height="372" Width="544">
+    <Grid Margin="0,0,0,-6">
+        <TextBox x:Name="capchaBox" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="25" FontSize="14"/>
+        <TextBlock x:Name="capchaBlock" HorizontalAlignment="Center" Margin="0,128,0,0" TextWrapping="Wrap" Text="capcha" VerticalAlignment="Top" Width="176" Height="37" FontSize="16"  />
+        <Button x:Name="btnCapcha" Content="Проверить" HorizontalAlignment="Left" Margin="223,261,0,0" VerticalAlignment="Top" Width="94" Height="25" Click="btnCapcha_Click"/>
+
+    </Grid>
+</Window>

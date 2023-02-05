@@ -95,5 +95,38 @@ namespace Store
         {
             UpdateProducte();
         }
+
+        private void ButtonAddList_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.mainFrame.Navigate(new AddEditPage());
+        }
+
+        private void ButtonEditList_Click(object sender, RoutedEventArgs e)
+        {
+            /*Manager.mainFrame.Navigate(new AddEditListView());*/
+        }
+
+        private void ButtonDel_Click(object sender, RoutedEventArgs e)
+        {
+            var glassRemove = Tovars.SelectedItems.Cast<Glasses>().ToList();
+
+            if (MessageBox.Show($" { glassRemove.Count() } " , "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    ApplicationContext.GetContext().glasses.RemoveRange(glassRemove);
+                    ApplicationContext.GetContext().SaveChanges();
+
+                    MessageBox.Show("Удалены данные");
+
+                    Tovars.ItemsSource = ApplicationContext.GetContext().glasses.ToList();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+                
+            }
+        }
     }
 }

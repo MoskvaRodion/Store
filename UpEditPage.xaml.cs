@@ -16,21 +16,13 @@ using System.Windows.Shapes;
 namespace Store
 {
     /// <summary>
-    /// Логика взаимодействия для AddEditPage.xaml
+    /// Логика взаимодействия для UpEditPage.xaml
     /// </summary>
-    public partial class AddEditPage : Page
+    public partial class UpEditPage : Page
     {
-        public AddEditPage()
+        public UpEditPage()
         {
             InitializeComponent();
-            
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {          
-
-
         }
     }
 }

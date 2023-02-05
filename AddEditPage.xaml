@@ -6,44 +6,19 @@
       xmlns:local="clr-namespace:Store"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditPage">
+      Title="AddEditPage" Background="White">
 
 
-        <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <ListView Grid.Row="1" Name="lView">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Margin="20" Width="400">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="70"/>
-                            <RowDefinition Height="310"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                          
-                        </Grid.RowDefinitions>
-                        <Image Width="400" Grid.Row="1" Stretch="UniformToFill" HorizontalAlignment="Center" Margin="5">
-                            <Image.Source>
-                                <Binding Path="ImagePreview">
-                                    <Binding.TargetNullValue>
-                                        <ImageSource>Resourse/picture.png</ImageSource>
-                                    </Binding.TargetNullValue>
-                                </Binding>
-                                
-                            </Image.Source>
-                            
-                        </Image>
-                        <TextBlock Text="{Binding Name}"  VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="5 5" FontSize="26" Grid.Row="0"></TextBlock>
-                        <TextBlock Text="{Binding material}" Grid.Row="2" Margin="5 5 5 15" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"></TextBlock>
-                        <TextBlock Text="{Binding price_on_glass}" Grid.Row="3" FontSize="14" HorizontalAlignment="Right"></TextBlock>
-                        <TextBlock Text="{Binding price}" Grid.Row="3" FontSize="14" HorizontalAlignment="Left"></TextBlock>
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        
+
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,350,0,0" VerticalAlignment="Top" Height="36" Width="140" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="199" Height="28"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="199" Height="28"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,263,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="199" Height="28"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="300,60,0,0" VerticalAlignment="Top" Height="38" Width="63"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="300,136,0,0" VerticalAlignment="Top" Height="45" Width="63"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="300,225,0,0" VerticalAlignment="Top" Height="33" Width="63"/>
+
+
     </Grid>
 </Page>

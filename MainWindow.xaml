@@ -6,14 +6,11 @@
         xmlns:local="clr-namespace:Store"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="400">
-    <Grid Margin="0,0,0,-26">
-        <Button x:Name="btn_login" Content="Войти" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btn_login_Click" IsEnabled="False"/>
+    <Grid Margin="0,0,0,-6">
+        <Button x:Name="btn_login" Content="Войти" HorizontalAlignment="Center" Margin="0,309,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btn_login_Click"/>
         <TextBox x:Name="Login" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="30" FontSize="14"/>
         <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" Width="234" Height="30" FontSize="14"/>
         <Label Content="Вход" HorizontalAlignment="Left" Margin="148,83,0,0" VerticalAlignment="Top" Height="71" Width="86" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
-        <TextBox x:Name="capchaBox" HorizontalAlignment="Left" Margin="83,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="25" FontSize="14"/>
-        <TextBlock x:Name="capchaBlock" HorizontalAlignment="Left" Margin="162,280,0,0" TextWrapping="Wrap" Text="capcha" VerticalAlignment="Top" Width="114" Height="37" FontSize="16"/>
-        <Button x:Name="btnCapcha" Content="" HorizontalAlignment="Left" Margin="281,317,0,0" VerticalAlignment="Top" Width="36" Height="25" Click="btnCapcha_Click"/>
 
     </Grid>
 </Window>
