@@ -33,7 +33,7 @@ public class ApplicationContext : DbContext
   
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseMySql("",
+        optionsBuilder.UseMySql("server=185.26.122.80;user=host1849318_moskovkin;password=qwerty123!;database=host1849318_moskovkin;",
             new MySqlServerVersion(new Version(8, 0, 25)));
     }
 }

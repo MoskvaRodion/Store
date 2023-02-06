@@ -21,7 +21,7 @@ public class Glasses
         public int type { get; set; }
         public bool actual { get; set; }    
 
-    public static Glasses CurrentGlasses = null;
+        public static Glasses currentGlasses;
 }
 public class Material
 {

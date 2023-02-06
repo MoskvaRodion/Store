@@ -7,10 +7,13 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="400">
     <Grid Margin="0,0,0,-6">
-        <Button x:Name="btn_login" Content="Войти" HorizontalAlignment="Center" Margin="0,309,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btn_login_Click"/>
+        <Button x:Name="btn_login" Content="Войти" HorizontalAlignment="Center" Margin="0,370,0,0" VerticalAlignment="Top" Height="33" Width="76" Click="btn_login_Click" IsEnabled="False"/>
         <TextBox x:Name="Login" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="30" FontSize="14"/>
         <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" Width="234" Height="30" FontSize="14"/>
         <Label Content="Вход" HorizontalAlignment="Left" Margin="148,83,0,0" VerticalAlignment="Top" Height="71" Width="86" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
+        <TextBox x:Name="capchaBox" HorizontalAlignment="Left" Margin="58,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="24" FontSize="14"/>
+        <TextBlock x:Name="capchaBlock" HorizontalAlignment="Left" Margin="148,275,0,0" TextWrapping="Wrap" Text="capcha" VerticalAlignment="Top" Width="176" Height="36" FontSize="16"  />
+        <Button x:Name="btnCapcha" Content="Проверить" HorizontalAlignment="Left" Margin="256,325,0,0" VerticalAlignment="Top" Width="94" Height="26" Click="btnCapcha_Click"/>
 
     </Grid>
 </Window>

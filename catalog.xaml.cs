@@ -98,19 +98,19 @@ namespace Store
 
         private void ButtonAddList_Click(object sender, RoutedEventArgs e)
         {
-            Manager.mainFrame.Navigate(new AddEditPage());
+            Manager.mainFrame.Navigate(new AddEditPage(null));
         }
 
         private void ButtonEditList_Click(object sender, RoutedEventArgs e)
         {
-            /*Manager.mainFrame.Navigate(new AddEditListView());*/
+            Manager.mainFrame.Navigate(new AddEditPage((sender as Button).DataContext as Glasses));
         }
 
         private void ButtonDel_Click(object sender, RoutedEventArgs e)
         {
             var glassRemove = Tovars.SelectedItems.Cast<Glasses>().ToList();
 
-            if (MessageBox.Show($" { glassRemove.Count() } " , "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            if (MessageBox.Show($" Удалить { glassRemove.Count() } элементов" , "Внимание", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
             {
                 try
                 {

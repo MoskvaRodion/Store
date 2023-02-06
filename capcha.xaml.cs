@@ -1,6 +1,6 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
-using System.Linq;
+using*//* System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -14,10 +14,10 @@ using System.Windows.Shapes;
 
 namespace Store
 {
-    /// <summary>
-    /// Логика взаимодействия для capcha.xaml
+    *//*/// <summary>
+    /// Логика взаимодействия для capcha.xaml*/
     /// </summary>
-    public partial class capcha : Window
+   /* public partial class capcha : Window
     {
         public capcha()
         {
@@ -56,9 +56,10 @@ namespace Store
                 MessageBox.Show("Капча пройдена");
             }
             else
-            {
+ *//*           {
                 captchs();
             }
-        }
+        }*//*
     }
 }
+*/
