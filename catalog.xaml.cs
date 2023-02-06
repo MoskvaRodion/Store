@@ -73,6 +73,8 @@ namespace Store
             if (ComboType.SelectedIndex > 0)
                 currentProd = currentProd.Where(p => p.type == ComboType.SelectedIndex).ToList();
 
+
+
             currentProd = currentProd.Where(p => p.nazvanie.ToLower().Contains(TBoxSearch.Text.ToLower())).ToList();
 
             if (CheckActual.IsChecked.Value)

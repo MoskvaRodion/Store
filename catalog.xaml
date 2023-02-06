@@ -59,7 +59,8 @@
                         <TextBlock Text="{Binding  material}" Grid.Row="3" FontSize="14" HorizontalAlignment="Right"></TextBlock>
                        
                         <Button x:Name="BtnEditList" Grid.Row="4" Content="Редактировать" Click="ButtonEditList_Click" HorizontalAlignment="Left" Width="85"/>
-                        <Button x:Name="BtnDelList" Grid.Row="4" Content="Удалить" Click="ButtonDel_Click" HorizontalAlignment="Right" Width="50"/>
+                        <Button x:Name="BtnDelList" Grid.Row="4" Content="Удалить" Click="ButtonDel_Click" HorizontalAlignment="Center" Width="50"/>
+                        <TextBlock Text="{Binding actual}" Grid.Row="3" FontSize="14" HorizontalAlignment="Left"></TextBlock>
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

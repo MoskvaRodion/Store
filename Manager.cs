@@ -10,6 +10,6 @@ namespace Store
     internal class Manager
     {
         public static Frame mainFrame { get; set; }
-        /*public static Frame mainFrame { get; set; }*/
+        
     }
 }
