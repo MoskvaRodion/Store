@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace Store
     public partial class AddEditPage : Page
     {
         private Glasses currentGlasses = new Glasses();
-        
+
 
         public AddEditPage(Glasses selectedGlasses)
         {
@@ -34,7 +35,7 @@ namespace Store
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             StringBuilder errors = new StringBuilder();
 
             if (string.IsNullOrWhiteSpace(currentGlasses.nazvanie))
@@ -60,7 +61,6 @@ namespace Store
 
             try
             {
-                /*ApplicationContext.GetContext().SaveChanges();*/
                 using (ApplicationContext db = new ApplicationContext())
                 {
                     db.SaveChanges();
@@ -77,6 +77,12 @@ namespace Store
         {
             Manager.mainFrame.GoBack();
 
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog ofd = new OpenFileDialog();
+            string strFinam = ofd.FileName;
         }
     }
 }

@@ -20,6 +20,7 @@
         <Label Content="Цена" HorizontalAlignment="Left" Margin="300,136,0,0" VerticalAlignment="Top" Height="45" Width="63"/>
         <Label Content="Материал" HorizontalAlignment="Left" Margin="300,225,0,0" VerticalAlignment="Top" Height="33" Width="80"/>
         <Button Content="Назад" HorizontalAlignment="Left" Margin="258,345,0,0" VerticalAlignment="Top" Height="36" Width="74" Click="Button_Click_1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="575,103,0,0" VerticalAlignment="Top" Width="110" Height="34" Click="Button_Click_2"/>
 
 
     </Grid>

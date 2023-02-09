@@ -23,12 +23,13 @@ namespace Store
         public catalog()
         {
             InitializeComponent();
-
+            
             ImportPhoto();
 
             using (ApplicationContext context = new ApplicationContext())
             {
-                Tovars.ItemsSource = context.glasses.ToList();
+                Tovars.ItemsSource = context.glasses.ToList(); 
+                _Count_ = "{currentGlasses.Count()}".;
             }
 
             var allProducts = ApplicationContext.GetContext().material_type.ToList();
@@ -134,7 +135,6 @@ namespace Store
         private void update_click(object sender, RoutedEventArgs e)
         {
             Tovars.ItemsSource = ApplicationContext.GetContext().glasses.ToList();
-            /*Manager.mainFrame.Navigate(new catalog());*/
         }
     }
 }
