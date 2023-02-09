@@ -130,5 +130,11 @@ namespace Store
                 
             }
         }
+
+        private void update_click(object sender, RoutedEventArgs e)
+        {
+            Tovars.ItemsSource = ApplicationContext.GetContext().glasses.ToList();
+            /*Manager.mainFrame.Navigate(new catalog());*/
+        }
     }
 }

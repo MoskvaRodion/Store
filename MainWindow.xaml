@@ -11,9 +11,9 @@
         <TextBox x:Name="Login" HorizontalAlignment="Center" Margin="0,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Height="30" FontSize="14"/>
         <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" Width="234" Height="30" FontSize="14"/>
         <Label Content="Вход" HorizontalAlignment="Left" Margin="148,83,0,0" VerticalAlignment="Top" Height="71" Width="86" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20"/>
-        <TextBox x:Name="capchaBox" HorizontalAlignment="Left" Margin="58,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" Height="24" FontSize="14"/>
-        <TextBlock x:Name="capchaBlock" HorizontalAlignment="Left" Margin="148,275,0,0" TextWrapping="Wrap" Text="capcha" VerticalAlignment="Top" Width="176" Height="36" FontSize="16"  />
-        <Button x:Name="btnCapcha" Content="Проверить" HorizontalAlignment="Left" Margin="256,325,0,0" VerticalAlignment="Top" Width="94" Height="26" Click="btnCapcha_Click"/>
+        <TextBox x:Name="capchaBox" HorizontalAlignment="Left" Margin="83,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="29" FontSize="14"/>
+        <TextBlock x:Name="capchaBlock" HorizontalAlignment="Left" Margin="158,284,0,0" TextWrapping="Wrap" Text="capcha" VerticalAlignment="Top" Width="176" Height="36" FontSize="16"  />
+        <Button x:Name="btnCapcha" Content="Проверить" HorizontalAlignment="Left" Margin="223,320,0,0" VerticalAlignment="Top" Width="94" Height="29" Click="btnCapcha_Click"/>
 
     </Grid>
 </Window>

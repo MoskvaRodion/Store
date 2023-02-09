@@ -9,8 +9,8 @@
 
   <ItemGroup>
     <None Remove="Resources\no-image.png" />
-    <None Remove="Resources\picture.png" />
     <None Remove="Resources\Голливудские.jpeg" />
+    <None Remove="Resources\Медицинские очки.png" />
     <None Remove="Resources\Пляжные.jpg" />
   </ItemGroup>
 
@@ -20,9 +20,6 @@
 
   <ItemGroup>
     <Resource Include="Resources\no-image.png" />
-    <Resource Include="Resources\picture.png" />
-    <Resource Include="Resources\Голливудские.jpeg" />
-    <Resource Include="Resources\Пляжные.jpg" />
   </ItemGroup>
 
   <ItemGroup>

@@ -16,7 +16,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <WrapPanel Orientation = "Horizontal" HorizontalAlignment = "Center" Width="954" >
+        <WrapPanel Orientation = "Horizontal" HorizontalAlignment = "Center" Width="1160" >
             <StackPanel Orientation = "Horizontal" >
                 <TextBlock Text = "Введите название для поиска:" Width = "175" TextAlignment = "Right" ></TextBlock >
                 <TextBox Width = "225" x:Name = "TBoxSearch" TextChanged = "TBoxSearch_TextChanged" />
@@ -27,6 +27,9 @@
             </StackPanel>
             <CheckBox x:Name = "CheckActual" Checked="CheckActual_checked" Unchecked="CheckActual_checked" Content = "Показывать" HorizontalAlignment = "Center" />
             <Button x:Name="BtnAddList"  Content="Добавить" Click="ButtonAddList_Click" HorizontalAlignment="Center" />
+            
+            <Button Content="Обновить" Width="88" Margin=" 10 0 " Click="update_click"/>
+
         </WrapPanel >
 
         <ListView Grid.Row="1" Name="Tovars" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
@@ -60,7 +63,7 @@
                        
                         <Button x:Name="BtnEditList" Grid.Row="4" Content="Редактировать" Click="ButtonEditList_Click" HorizontalAlignment="Left" Width="85"/>
                         <Button x:Name="BtnDelList" Grid.Row="4" Content="Удалить" Click="ButtonDel_Click" HorizontalAlignment="Center" Width="50"/>
-                        <TextBlock Text="{Binding actual}" Grid.Row="3" FontSize="14" HorizontalAlignment="Left"></TextBlock>
+                        
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>

@@ -34,13 +34,14 @@ namespace Store
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             StringBuilder errors = new StringBuilder();
 
-            if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.nazvanie)))
+            if (string.IsNullOrWhiteSpace(currentGlasses.nazvanie))
                 errors.AppendLine("Укажите название очков");
             if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.price)))
                 errors.AppendLine("Укажите цену");
-            if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.material)))
+            if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.type)))
                 errors.AppendLine("Укажите модель очков");
 
             if (errors.Length > 0)
@@ -50,18 +51,26 @@ namespace Store
             }
 
             if (currentGlasses.id == 0)
+            {
                 ApplicationContext.GetContext().glasses.Add(currentGlasses);
+            }
+            ApplicationContext.GetContext().SaveChanges();
+
+
 
             try
             {
-                ApplicationContext.GetContext().SaveChanges();
+                /*ApplicationContext.GetContext().SaveChanges();*/
+                using (ApplicationContext db = new ApplicationContext())
+                {
+                    db.SaveChanges();
+                }
                 MessageBox.Show("Информация сохранения!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }
-
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

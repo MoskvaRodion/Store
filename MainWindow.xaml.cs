@@ -72,6 +72,7 @@ namespace Store
                 }
                 else
                 {
+                    
                     MessageBox.Show("Логин или пароль введён неверно");
                 }
             }
