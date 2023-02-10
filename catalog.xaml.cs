@@ -29,7 +29,7 @@ namespace Store
             using (ApplicationContext context = new ApplicationContext())
             {
                 Tovars.ItemsSource = context.glasses.ToList(); 
-                _Count_ = "{currentGlasses.Count()}".;
+                
             }
 
             var allProducts = ApplicationContext.GetContext().material_type.ToList();
@@ -70,6 +70,7 @@ namespace Store
         private void UpdateProducte()
         {
             var currentProd = ApplicationContext.GetContext().glasses.ToList();
+            int maxCount = currentProd.Count;
 
             if (ComboType.SelectedIndex > 0)
                 currentProd = currentProd.Where(p => p.type == ComboType.SelectedIndex).ToList();
@@ -80,8 +81,10 @@ namespace Store
 
             if (CheckActual.IsChecked.Value)
                 currentProd = currentProd.Where(p => p.actual).ToList();
+                
 
             Tovars.ItemsSource = currentProd.OrderBy(p => p.price).ToList();
+            _Count_.Content = Convert.ToString(Tovars.Items.Count + "/" + maxCount);
         }
 
 
