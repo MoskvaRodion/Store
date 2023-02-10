@@ -4,23 +4,33 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Store"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="AddEditPage" Background="White">
+      mc:Ignorable="d" d:DesignWidth="800"
+      Title="AddEditPage" Background="White" Height="554">
 
 
 
     <Grid>
         <Frame NavigationUIVisibility='Hidden' Name="AddandUp" />
-        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="378,345,0,0" VerticalAlignment="Top" Height="36" Width="122" Click="Button_Click"/>
-        <TextBox Text="{Binding nazvanie}" HorizontalAlignment="Left" Margin="258,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
-        <TextBox Text="{Binding price}" HorizontalAlignment="Left" Margin="258,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
-        <TextBox Text="{Binding type}" HorizontalAlignment="Left" Margin="258,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
-        <Label Content="Название" HorizontalAlignment="Left" Margin="300,60,0,0" VerticalAlignment="Top" Height="38" Width="63"/>
-        <Label Content="Цена" HorizontalAlignment="Left" Margin="300,136,0,0" VerticalAlignment="Top" Height="45" Width="63"/>
-        <Label Content="Материал" HorizontalAlignment="Left" Margin="300,225,0,0" VerticalAlignment="Top" Height="33" Width="80"/>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="258,345,0,0" VerticalAlignment="Top" Height="36" Width="74" Click="Button_Click_1"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="575,103,0,0" VerticalAlignment="Top" Width="110" Height="34" Click="Button_Click_2"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="385,466,0,0" VerticalAlignment="Top" Height="36" Width="122" Click="Button_Click"/>
+        <TextBox Text="{Binding nazvanie}" HorizontalAlignment="Left" Margin="121,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox Text="{Binding price}" HorizontalAlignment="Left" Margin="121,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox Text="{Binding type}" HorizontalAlignment="Left" Margin="121,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <Label Content="Название" HorizontalAlignment="Left" Margin="121,65,0,0" VerticalAlignment="Top" Height="38" Width="63"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="121,156,0,0" VerticalAlignment="Top" Height="31" Width="63"/>
+        <Label Content="Материал" HorizontalAlignment="Left" Margin="121,230,0,0" VerticalAlignment="Top" Height="33" Width="80"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="263,466,0,0" VerticalAlignment="Top" Height="36" Width="74" Click="Button_Click_1"/>
+        <Label Content="Модель" HorizontalAlignment="Left" Margin="439,71,0,0" VerticalAlignment="Top"/>
+        <TextBox Text="{Binding proizvoditel}" HorizontalAlignment="Left" Margin="439,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox Text="{Binding model}" HorizontalAlignment="Left" Margin="439,108,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox Text="{Binding pol}" HorizontalAlignment="Left" Margin="439,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox Text="{Binding actual}" HorizontalAlignment="Left" Margin="121,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox Text="{Binding color}" HorizontalAlignment="Left" Margin="439,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <Label Content="Пол" HorizontalAlignment="Left" Margin="444,159,0,0" VerticalAlignment="Top"/>
+        <Label Content="Производитель" HorizontalAlignment="Left" Margin="441,229,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Цвет" HorizontalAlignment="Left" Margin="441,303,0,0" VerticalAlignment="Top" Width="51"/>
+        <Label Content="Актуальность" HorizontalAlignment="Left" Margin="123,303,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,1.375" Height="31"/>
+        <TextBox Text="{Binding price_on_glass}" HorizontalAlignment="Left" Margin="123,409,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Height="28"/>
+        <Label Content="Цена за линзы" HorizontalAlignment="Left" Margin="123,378,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.521,1.375" Height="31" Width="137"/>
 
 
     </Grid>

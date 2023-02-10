@@ -14,7 +14,6 @@ public class Glasses
         public string pol { get; set; }
         public string proizvoditel { get; set; }
         public string color { get; set; }
-        public string material { get; set; }
         public int price { get; set; }
         public int price_on_glass { get; set; }
         public byte[]? Image { get; set; }

@@ -9,9 +9,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="31"/>
-            <RowDefinition Height="405"/>
-            <RowDefinition Height="417"/>
+            <RowDefinition Height="517"/>
+            <RowDefinition Height="200"/>
         </Grid.RowDefinitions>
-        <Frame NavigationUIVisibility='Hidden' Name="mainFrame" Grid.Row="1" Grid.RowSpan="2"/>
+        <Frame NavigationUIVisibility='Hidden' Name="mainFrame" Grid.Row="1" Height="387" VerticalAlignment="Top" Margin="0,10,0,0"/>
     </Grid>
 </Window>

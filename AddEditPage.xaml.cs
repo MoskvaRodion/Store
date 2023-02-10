@@ -44,6 +44,18 @@ namespace Store
                 errors.AppendLine("Укажите цену");
             if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.type)))
                 errors.AppendLine("Укажите модель очков");
+            if (string.IsNullOrWhiteSpace(currentGlasses.model))
+                errors.AppendLine("Укажите модель очков");
+            if (string.IsNullOrWhiteSpace(currentGlasses.pol))
+                errors.AppendLine("Укажите пол клиента");
+            if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.price_on_glass)))
+                errors.AppendLine("Укажите цену линз очков");
+            if (string.IsNullOrWhiteSpace(currentGlasses.proizvoditel))
+                errors.AppendLine("Укажите производителя очков");
+            if (string.IsNullOrWhiteSpace(currentGlasses.color))
+                errors.AppendLine("Укажите цвет очков");
+            if (string.IsNullOrWhiteSpace(Convert.ToString(currentGlasses.actual)))
+                errors.AppendLine("Укажите актуальность очков");
 
             if (errors.Length > 0)
             {
@@ -79,10 +91,10 @@ namespace Store
 
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+/*        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.OpenFileDialog ofd = new OpenFileDialog();
             string strFinam = ofd.FileName;
-        }
+        }*/
     }
 }
