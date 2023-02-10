@@ -12,8 +12,9 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" MinHeight="54"></RowDefinition>
-            <RowDefinition/>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="218"></RowDefinition>
+            <RowDefinition Height="30*"></RowDefinition>
         </Grid.RowDefinitions>
 
         <WrapPanel Orientation = "Horizontal" HorizontalAlignment = "Center" Width="1160" >
